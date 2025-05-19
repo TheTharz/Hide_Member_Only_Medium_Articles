@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Medium Member-Only Filter",
+  "version": "1.0",
+  "description": "Hides Medium member-only articles from your feed",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://medium.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
