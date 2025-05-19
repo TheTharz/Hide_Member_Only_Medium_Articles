@@ -13,7 +13,7 @@ function hideMemberOnlyPostsByStarIcon() {
         parent = parent.parentElement;
       }
       if (parent) {
-        parent.style.display = 'none';
+        parent.remove();
         removedCount++;
       }
     }
